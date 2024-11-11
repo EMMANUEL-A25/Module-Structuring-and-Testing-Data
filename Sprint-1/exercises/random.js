@@ -21,8 +21,6 @@ Break down of the expression:
 A minimum variable was declared to be 1 
 A maximum variable declared to be to be 100
 
-
-
 The final variable , num  was declared to be Math floor(Math.random())
 And as described before math floor returns the highest integer that's less or equal to the value while math.random generates any between 0 and 1.
 
