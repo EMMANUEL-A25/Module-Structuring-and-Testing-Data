@@ -1,4 +1,4 @@
-const num = 56.5678;
+//const num = 56.5678;
 
 // You should look up Math functions for this exercise https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
@@ -10,17 +10,16 @@ const num = 56.5678;
 
 const wholeNumberPart = 56.5678;
 console.log(Math.floor(wholeNumberPart));
-=56
+
 
 const number = 56.5678;
-const decimalpart = number - Math.floor(number.toFixed(3));
+const decimalpart = number - Math.floor(number.toFixed(1));
 console.log(decimalpart);
 
-=0.5678
+
 
 
 const roundedNum = 56.5678;
 console.log(Math.round(roundedNum));
- =57;
 
-CSSCounterStyleRule
+
