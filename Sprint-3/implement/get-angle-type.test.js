@@ -8,3 +8,4 @@ function getAngleType(){
 test("Returns angle Type", () => {
     expect(getAngleType(90)).toEqual("Right angle");
 });
+
