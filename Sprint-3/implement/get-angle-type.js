@@ -34,4 +34,8 @@ function getAngleType(){
   if(angle === 90){
     return "Right angle";
   }
+  if(angle === 180){
+    return "Straight  angle"
+  }
+  
 }
