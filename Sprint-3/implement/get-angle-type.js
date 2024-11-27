@@ -28,5 +28,7 @@
  
 
 function getAngleType(){
-    
+  if(angle  < 90){
+    return "Acute angle.";
+  }
 }
