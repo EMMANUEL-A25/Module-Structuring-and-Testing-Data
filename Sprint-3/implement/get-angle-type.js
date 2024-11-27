@@ -40,3 +40,4 @@ function getAngleType(){
   if(angle < 360){
     return "Reflex  angle" 
 }
+}
