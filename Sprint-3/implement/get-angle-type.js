@@ -27,4 +27,6 @@
 // Then the function should return "Reflex angle"
  
 
- 
+function getAngleType(){
+    
+}
