@@ -45,4 +45,5 @@ function getCardValue(cardString) {
     }
   }
 
+  module.exports = getCardValue;
    
