@@ -65,3 +65,4 @@ function rotateCharacter(char, shift) {
     return String.fromCharCode(code);
 }
   
+module.exports = rotateCharacter;
