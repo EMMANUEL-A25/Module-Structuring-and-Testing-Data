@@ -47,4 +47,5 @@ function getAngleType(angle){
       return "Reflex angle" 
     }
   }
+   module.exports = getAngleType;
   
