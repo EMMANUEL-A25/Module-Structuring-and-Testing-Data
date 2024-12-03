@@ -42,4 +42,5 @@ function isValidTriangle(a, b, c) {
   } 
     return false;
   }
-    
+  
+  module.exports = isValidTriangle;
