@@ -1,4 +1,4 @@
-const rotateCharacter = require('./rotate-character');
+const rotateCharacter = require('./rotate-char');
 
 test('rotates a lowercase letter by the given shift', () => {
   expect(rotateCharacter('a', 3)).toBe('d');
