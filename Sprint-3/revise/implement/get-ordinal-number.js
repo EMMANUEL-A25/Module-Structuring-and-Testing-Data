@@ -7,3 +7,6 @@ function getOrdinalNumber(number) {
       return number + "rd";
     }  
   }
+
+  module.exports = getOrdinalNumber;
+ 
