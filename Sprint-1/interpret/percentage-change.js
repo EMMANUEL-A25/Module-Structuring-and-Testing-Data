@@ -13,7 +13,7 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // a) How many function calls are there in this file? Write down all the lines where a function call is made
 The are 5 function calls. 
-lines where a function call is made:
+Lines where a function call is made:
 line 4 
 line 5 
 line 8
@@ -30,8 +30,8 @@ line 4 and line 5.
 
 // d) Identify all the lines that are variable declarations
 
-line 1  and 2. 
-line 7 and 8.
+lines 1  and 2. 
+lines 7 and 8.
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
 It takes the string we assigned to the carprice variable removes the commas using replace all and then converts the string using a number function. 
