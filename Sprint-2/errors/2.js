@@ -1,18 +1,20 @@
 
 // Predict and explain first...
 
-// this function should square any number but instead we're going to get an error
+//This function should square any number but instead, we're going to get an error
 
 function square(3) {
     return num * num;
 }
 
-The reason we are getting an error is because our function is very confusing,  the square function parenthesis  has a value of 3 which was not declared.
- Also we cannot have a value in the parenthesis because we want a function that will square any number that we declare, here is the fixed function below 
+We are going to get an error because one of our goals with our function is to make it reusable and flexible hence we have to use placeholders that will accommodate any number we put in. 
+ 
+Solution: 
 
-function square(num) {
+function square(x) {
 
 
  return num * num;
 }
 
+ 
