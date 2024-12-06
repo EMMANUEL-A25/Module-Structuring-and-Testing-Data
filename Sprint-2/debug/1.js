@@ -7,8 +7,9 @@ function sum(a, b) {
 
 console.log(`The sum of 10 and 32 is ${sum(10, 32)}`);
 
-Prediction: theres something wrong with the syntax of our code, infront of our return we have a semi Colon instead of a colon and our alignment is off. 
-            Hence the result of the sum function will be undefined.
+Prediction: there's something wrong with the syntax of our code, one of the rules of the return statement is that it 
+  forbids line terminators between the return keyword and the expression to be returned.
+  If we put in a line terminator before the value we have to return we will get an error and our value will not be read.
 
 
 Fixing the error: 
@@ -19,4 +20,4 @@ function sum(a, b) {
  
 console.log(`The sum of 10 and 32 is ${sum(10, 32)}`);
 
-Result of the code is = The sum of 10 and 32 is 42
+ The sum of 10 and 32 is 42
