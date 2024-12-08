@@ -40,6 +40,8 @@ function getCardValue(cardString) {
       return 10; 
     } else if (parseInt(rank) >= 2 && parseInt(rank) <= 9) {
       return parseInt(rank); 
+    } else if (rank === 'AA♠' || rank === '1000♠' || return === '2.1'){
+        throw new Error("Invalid card rank."); 
     } else {
       throw new Error("Invalid card rank."); 
     }
