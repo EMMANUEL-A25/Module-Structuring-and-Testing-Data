@@ -6,7 +6,9 @@ test('getCardValue returns 11 for Ace', () => {
 
 
 test('getCardValue returns 10 for J, Q or K', () => {
-    expect(getCardValue('J, Q, K')).toBe(10);
+    expect(getCardValue('J♠')).toBe(10);
+    expect(getCardValue('Q♠')).toBe(10);
+    expect(getCardValue('K♠')).toBe(10);
   });
 
 
