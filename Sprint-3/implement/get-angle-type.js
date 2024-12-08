@@ -1,4 +1,4 @@
-// Implement a function getAngleType
+i// Implement a function getAngleType
 
 // Acceptance criteria:
 
@@ -43,7 +43,7 @@ function getAngleType(angle){
       return "Straight angle"
     }
   
-    if(angle < 360){
+     if(angle > 180 && angle < 360){
       return "Reflex angle" 
     }
   }
