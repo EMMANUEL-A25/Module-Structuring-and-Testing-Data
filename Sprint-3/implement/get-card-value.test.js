@@ -18,5 +18,9 @@ test('getCardValue returns parseInt(rank) for 2 & 9', () => {
 });
 
 test('getCardValue throws error for invalid rank', () => {
-  expect(() => getCardValue('invalid rank')).toThrow('Invalid card rank.');
+  expect(() => getCardValue('A♠♠')).toThrow('Invalid card rank.');
+  expect(() => getCardValue('Q$')).toThrow('Invalid card rank.');
+  expect(() => getCardValue('K&')).toThrow('Invalid card rank.');
+  
+    
 });
