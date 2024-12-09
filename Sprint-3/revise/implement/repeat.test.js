@@ -41,7 +41,7 @@ test('returns an empty string when count is 0', () => {
     expect(repeat('world', 0)).toBe('');
 });
 
-//test('throws an error for negative count', () => {
-//    expect((repeat) => repeat('hello', -1)).toThrow('Count cannot be negative');
-//    expect((repeat) => repeat('world', -2)).toThrow('Count cannot be negative');
-//});
+ test('throws an error for negative count', () => {
+    expect(() => repeat('hello', -1)).toThrow('Count cannot be negative');
+    expect(() => repeat('world', -2)).toThrow('Count cannot be negative');
+});
