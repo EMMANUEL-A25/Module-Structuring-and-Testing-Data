@@ -47,7 +47,7 @@ function getAngleType(angle){
       return "Reflex angle" 
     }
 
-    else{
+    else {
         return "Invalid angle"
     }
   }
