@@ -45,24 +45,12 @@
 
 
 function rotateCharacter(char, shift) {
-    let code = char.charCodeAt(0);
-  
     const isLowercase = char.toLowerCase() === char;
-  
-    code += shift;
-    if (isLowercase) {
-      while (code > 122) {
-        code -= 26;
-      }
-    } else {
-      while (code > 90) {
-        code -= 26;
-      }
-      while (code < 65) {
-        code += 26;
-      }
-    }
-    return String.fromCharCode(code);
+    const baseCode = isLowercase ? 'a'.charCodeAt(0) : 'A'.charCodeAt(0);
+    const charCode = char.charCodeAt(0);
+
+    let rotatedCode = ((charCode - baseCode + shift) % 26) + baseCode;
+    return String.fromCharCode(rotatedCode);
 }
-  
+
 module.exports = rotateCharacter;
