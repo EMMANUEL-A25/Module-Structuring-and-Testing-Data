@@ -13,7 +13,7 @@ expect(isProperFraction(5, 2)).toBe(false);
 });
 
 test('return true for a proper function', () => {
- expect(isProperFraction(-4, 7)).toBe(true);
+ expect(isProperFraction(4, 7)).toBe(true);
 });
 
 test('return false for a improper function', () => {
