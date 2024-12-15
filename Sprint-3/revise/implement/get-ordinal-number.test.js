@@ -5,34 +5,22 @@
 
 const getOrdinalNumber = require('./get-ordinal-number');
 
-test("converts 1 to an ordinal number", function () {
-  expect(getOrdinalNumber(1)).toEqual("1st");
+test("Expect 'st' as suffix when the last digit is 1 but the last two digits are not 11, 12, or 13", () => {
+  expect(getOrdinalNumber(1)).toBe("1st");
+  expect(getOrdinalNumber(21)).toBe("21st");
 });
 
-test("converts 2 to an ordinal number", function () {
-  expect(getOrdinalNumber(2)).toEqual("2nd");
+test("Expect 'nd' as suffix when the last digit is 2 but the last two digits are not 12", () => {
+  expect(getOrdinalNumber(2)).toBe("2nd");
+  expect(getOrdinalNumber(22)).toBe("22nd");   
 });
 
-test("converts 3 to an ordinal number", function () {
-  expect(getOrdinalNumber(3)).toEqual("3rd");
+test("Expect 'rd' as suffix when the last digit is 3 but the last two digits are not 13", () => {
+  expect(getOrdinalNumber(3)).toBe("3rd");
+  expect(getOrdinalNumber(23)).toBe("23rd");
 });
 
-test('converts 100 to an ordinal number', () => {
-  expect(getOrdinalNumber(100)).toBe('100th');
-});
-
-test('converts 12 to an ordinal number', () => {
-  expect(getOrdinalNumber(12)).toBe('12th');
-});
-
-test('converts 32 to an ordinal number', () => {
-  expect(getOrdinalNumber(32)).toBe('32nd');
-});
-
-test('converts 21 to an ordinal number', () => {
-  expect(getOrdinalNumber(21)).toBe('21st');
-});
-
-test('converts 43 to an ordinal number', () => {
-  expect(getOrdinalNumber(43)).toBe('43rd');
+test("Expect 'th' as suffix for all other cases", () => {
+  expect(getOrdinalNumber(4)).toBe("4th");
+  expect(getOrdinalNumber(11)).toBe("11th");
 });
