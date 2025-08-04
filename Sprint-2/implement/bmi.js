@@ -13,3 +13,17 @@
 // Given someone's weight in kg and height in metres
 // Then when we call this function with the weight and height
 // It should return their Body Mass Index to 1 decimal place
+
+
+function Bmi(height, weight){
+
+let x = weight /(height * height);
+
+let roundednumber = x.toFixed(1);
+return roundednumber;
+
+};
+
+console.log(Bmi(1.73, 70));
+
+//solved

@@ -13,3 +13,15 @@
 
 // You will need to come up with an appropriate name for the function
 // Use the string documentation to help you find a solution
+
+
+function Up(string){
+
+let greeting = string.toUpperCase().replace(/ /g, '_');
+
+return greeting;
+}
+
+console.log(Up("Lord of the rings"));
+
+//solved
